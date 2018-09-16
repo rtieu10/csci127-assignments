@@ -36,7 +36,7 @@ def init(name):
     first = name [0][0]
     last = "Tieu"
     
-    print(first,'.' + last.upper())
+    return(first,'.' + last.upper())
     
     
 def part_pig_latin(name):
@@ -47,7 +47,7 @@ def part_pig_latin(name):
     """
     eng_word = "Hello"
     pig_word = eng_word[1:] + eng_word[0].lower() + "ay"
-    print(pig_word) 
+    return(pig_word) 
 
 
 def make_out_word(out, word):
