@@ -1,4 +1,4 @@
-
+#Rachel Tieu & Jia Qi He
     
 def vowel_pig_latin(name):
     vowels = ['a','e','i','o','u','A','E','I','O','U']
