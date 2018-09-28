@@ -1,3 +1,4 @@
+#Rachel Tieu & Emily Fang 
 def collatz(a):
     c = 0
     while a > 1:
