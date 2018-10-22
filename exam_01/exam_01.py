@@ -36,7 +36,7 @@ print(compress_word("people"))
 sentence = "Who is there"  
 def sentence(line):
           for i in s.split():
-             sentence = 
+             sentence = s[0] + 
   
        # return" ".join(sentence)
         
