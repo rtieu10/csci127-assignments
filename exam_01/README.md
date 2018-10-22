@@ -1,0 +1,1 @@
+ I tried making a for loop for the letters in the list, but it only sends back certain letters instead of the right thing. I also tried to append it in a list excluding the vowels and .join them but it didnt work either.
