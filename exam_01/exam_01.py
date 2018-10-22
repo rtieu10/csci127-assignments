@@ -23,7 +23,7 @@ def compress_word(w):
     i = ['b','c','d','f','g','h','j','k','l','m','n','p','q','r','s','t','v','w','x','y','z', 'B','C','D',
          'F','G','H','J','K','L','M','N','P','Q','R','S','T','V','W','X','Y','Z']
     for i in w:
-         s = w[0] + i  
+         s = w[0] + w[:1]
     #s = [w[0], s.append(i)]
     return(s)
 
@@ -31,12 +31,10 @@ print(compress_word("hello"))
 print(compress_word("people"))
 
 
-
-
-sentence = "Who is there"  
-def sentence(line):
-          for i in s.split():
-             sentence = 
+#sentence = "Who is there"  
+#def sentence(line):
+          #for i in s.split():
+             #sentence = sentence + 
   
        # return" ".join(sentence)
         
