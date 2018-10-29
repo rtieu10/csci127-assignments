@@ -35,5 +35,19 @@ def frequency(list, a):
             count = count + 1
         return count
 
-        
+  def mode(l):   
+    mmode=0
+    u=[]
+    num=0
+    for i in l:
+        if i not in u:
+            mode=frequency(l,i)
+            if mode>mmode:
+                mmode=mode
+                num=i
+            u.append(i)
+    return num,mmode
+
+print(mode(l)) 
+      
     
