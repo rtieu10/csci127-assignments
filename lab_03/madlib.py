@@ -30,3 +30,11 @@ def madlib(s):
 
 print(madlib(sentence))
             
+# NOUNS[random.randrange(0,len(NOUNS))] this also picks a random word within the length range
+# sub = random.choice(NOUNS) , return sub
+# def madlibify(sentence, nouns, verbs) - allows us to see the variables we are actually inputting here
+# sentence.split() to convert it into a list of words
+# you can make the result  a string to begin with which prevens you from using the join fucntion, you could
+# have used a string or a list "result = result + " " + word
+# we are appending words to a list which will eventually become a sentence, which is why we are randomly
+# picking and we will eventually ask for the list / string to be returned which will appear as a sentence 
