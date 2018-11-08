@@ -11,9 +11,48 @@ def happyLadybugs(b):
         
     return "YES"
 
+#print(happyLadybugs("ABCC_ACB"))
+#print(happyLadybugs("AAB"))
+#print(happyLadybugs("AABB"))
+
+def happy(b):
+    if '_' not in b:
+        for i in range(1,len(b)-1):
+            if b[i-1] != b[i] and b[i+1] != b[i]:
+                return "FALSE"
+    else:
+        vals = dict(b).values()
+        if 1 in vals:
+            return "FALSE"
+    return "TRUE"
+
+def dict(x):
+    d = {}
+    for i in x:
+        if i != "_":
+            if i not in d: 
+               d[i] = 1
+            else:
+                d[i] += 1
+    return d 
+
+a = 'AABCBD_'
+b = 'ABB'
+c = 'ACCB_B'
+d = 'ABABAB'
+e = 'A_BBA'
+
+print(happy(a))
+print(happy(b))
+print(happy(c))
+print(happy(d))
+print(happy(e)) 
+
 print(happyLadybugs("ABCC_ACB"))
 print(happyLadybugs("AAB"))
 print(happyLadybugs("AABB"))
+print(happyLadybugs("A_C_BB"))
+print(happyLadybugs("ABCBC_A"))
 
 #if theres a space you need at least 2 ladybugs of the same color
 #there needs to be at least 2 ladybugs of each color and at least one space
