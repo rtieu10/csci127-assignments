@@ -15,26 +15,6 @@ sentence = "<ADJECTIVES> <HERO> <VERB> in the <NOUNS> and then <HERO> <VERB> <NO
  #   print("YES")
 
 
-
-#def madlib(s,d):
-    #new_list = []
-    #H_random = random.choice(HEROS)
-   # for n in dict['nouns']:
-      #  new_list.append(random.choice(dict['nouns']))
-    #for v in dict['verbs']:
-     #   new_list.append(random.choice(dict['verbs'])) 
-    #for h in dict['heros']: 
-      #  new_list.append(random.choice(dict['heros']))
-    #for a in dict['adjectives']:
-     #   new_list.append(random.choice(dict['adjectives']))
-        
-            
-    #return " ".join(new_list)
-
-#print(madlib(sentence,dict))
-
-
-
 def madlib(s,d):
     new_list = []
     H_random = random.choice(d['HEROS'])
