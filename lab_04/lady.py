@@ -11,6 +11,14 @@ def happyLadybugs(b):
         
     return "YES"
 
+<<<<<<< HEAD
+=======
+#print(happyLadybugs("ABCC_ACB"))
+#print(happyLadybugs("AAB"))
+#print(happyLadybugs("AABB"))
+
+
+>>>>>>> 2f66f65d610bdb1422329a8f069daacb54e9cebc
 def happy(s):
     if '_' not in b:
         for i in range(1,len(b)-1):
@@ -60,3 +68,7 @@ print(happyLadybugs("ABCBC_A"))
 #you can use the sorted command where you can sort it in a list and check the amount
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2f66f65d610bdb1422329a8f069daacb54e9cebc
