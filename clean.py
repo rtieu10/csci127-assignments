@@ -3,6 +3,7 @@ def read(file):
     t = f.read()
     return t
 
+<<<<<<< HEAD
 
 #def clean_data(t):
  #   words = t.split() 
@@ -28,6 +29,8 @@ def read(file):
          #   clean.append(words)
     #return clean
         
+=======
+>>>>>>> c8174bcfdda8d8c3d794d016bbf655b37b740990
 def clear(t):
     word =""
     x = t.lower()
@@ -52,4 +55,8 @@ print(clear(",..,,.,helloooooo"))
 print(word_count(",..,,.,helloooo"))
 
         
+<<<<<<< HEAD
    
+=======
+   
+>>>>>>> c8174bcfdda8d8c3d794d016bbf655b37b740990
