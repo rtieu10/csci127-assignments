@@ -49,7 +49,7 @@ def encode(x):
         return dicttwo
 print(encode("abcd"))
 print(encode("aaabbbccdd"))
-
+"""
 
 
 #def encode(x):
@@ -76,4 +76,3 @@ def decode(x):
         letter = elements[0]        
         number = elements[1]
         total = letter * number     #you can try to use .join to join the whole string together again
-"""
