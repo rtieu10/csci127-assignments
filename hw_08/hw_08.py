@@ -37,7 +37,7 @@ vals = sorted(vals)
 
 for k in words:
     if words[k] > 1000:
-        print(k,words[k])
+       print(k,words[k])
         
 #def build_phrases(cleaned_string):    #make a dictionary for every word that appears, mak an empty list as the value of the key and add the word after it to the list that makes up the value of the key 
  #   dict ={}
@@ -55,6 +55,47 @@ def build_phrases(cleaned_string):
         dict.setdefault(clean_list[i],[]).append(clean_list[i+1])
     return dict
              
-print(build_phrases(cleaned_string))
+#print(build_phrases(cleaned_string))
  
+#def build_word_lists(words):
+ #   d = {}
+  #  for i in range(0,len(words)-2):                 #go to -2 cause -1 is already the last one
+   #     d.setdefault(words[i],[])                   #set the key i to an empty list 
+    #    d[words[i]].append(words[i+1])              # we are appending the words after the i hence i + 1  
+    #return d
 
+#def build_words_lists(words):
+ #   d= {}
+  #  words = words.split()
+   # prev = words[0]
+    #for next word in words[1:]:                    # looks at the list from the index of 1 and on 
+     #   d.setdefault(prev,[])
+      #  d[prev].append(nextword)
+       # prev = nextword
+    #return d 
+
+def gen_text(wl,number,tuple):
+    first = tuple[0]
+    second = tuple[1]
+    (call,me) 
+    text = [] 
+    for i in range(number):
+        text.appednd(first)
+        next = random.choice(wl[tuple])
+        tuple = (second,next)
+        first = second
+        second = next 
+    return ' '.join(text) 
+
+
+
+def buid_word_lists(words):
+    d = {}
+    words = words.split()
+    first = words[0]
+    second = words[1]
+    for nextword in words[2:]:
+        key = (first,second)                  #this is a tuple, similar to a list, but it uses parentheses and its contents cant be changed once set, like a string
+        d.setdefault(key,[])
+        
+        

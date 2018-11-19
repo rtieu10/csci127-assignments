@@ -30,12 +30,12 @@ def index_largest(l):
 
 def frequency(list, a):
     count = 0
-    for x < len(l):
+    for x in len(l):
         if num in l:
             count = count + 1
         return count
 
-  def mode(l):   
+def mode(l):
     mmode=0
     u=[]
     num=0
