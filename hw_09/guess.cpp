@@ -20,7 +20,7 @@ int main() {
     while (response != 0) {   // if the number is not correct 
 	if (response == 1) { 
              guess = rand() % guess + 0;
-	}                                   //if the guess is greater than pick a random number 						    between 0 and the guess for a lower number 
+	}                                   //if the guess is greater than pick a random number 						between 0 and the guess for a lower number 
        	else { 
                guess = rand() % 100 + guess  // if the number is less than then pick a great num
         }
@@ -30,3 +30,7 @@ int main() {
       std::cin >> response;
 return 0 
 } 
+
+/* keeps giving an error regarding the use of rand() says it was not 'declared' not sure why */ 
+
+
