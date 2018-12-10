@@ -1,25 +1,16 @@
 #include <iostream>
 #include <math.h>  
 
-/*int discriminant(int a, int b, int c){ 
-std::cout << (b*b) - 4*a*c << std::endl; 
-}*/ 
-
-/*double a; 
-double b; 
-double c;*/ 
-
-double discriminant(double a, double b, double c){ 
-std::cout << (b*b) - (4*a*c) << std::endl; 
+int discriminant(int a, int b, int c){ 
+return (b*b)-(4*a*c); 
 } 
 
 double quadsolve(double a, double b, double c){ 
-double discrim;
-std::cout<< (b*b) - (4*a*c) <<std::endl; 
-std::cin>>discrim; 
+int d; 
+d = discriminant(a,b,c);
 
-if (discrim >= 0){ 
-std::cout<<((-(b) + sqrt(discrim))/(2*a))<<std::endl; 
+if (d >= 0){ 
+return (-b+ sqrt(d))/(2*a)); 
 } 
 else{ 
 return 0;
@@ -27,16 +18,8 @@ return 0;
 }
 
 int main() { 
-double a = .5;
-double b = 1.0;
-double c = 2.0; 
-std::cout << "a =" << a << std::endl; 
-std::cout << "b =" << b << std::endl; 
-std::cout << "c =" << c << std::endl; 
-discriminant(.5,1,2); 
-quadsolve(.5,1,2); 
-
-
+std::cout << discriminant(3,1,2) << std::endl; 
+std::cout << quadsolve(3,1,2) << std::endl; 
 
 return 0; 
 } 
