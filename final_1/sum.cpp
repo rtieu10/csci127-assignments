@@ -1,23 +1,22 @@
 #include <iostream> 
 
 int sumofsquares(int a, int b){ 
-int total = 0; 
-int sum; 
-
-for (a; b; a++) { 
-std::cout<<a*a<<std::endl; 
-std::cin>>sum; 
+int total;
+int sum;
+total = 0;
+for (a;a<b+1; a = a + 1) {
+sum = a * a; 
 total = total + sum; 
-return total; 
 } 
+return total;
 
 }
 
 
 int main() { 
-sumofsquares(5,10); 
-sumofsquares(10,12);
-
+std::cout << sumofsquares(5,10) <<std::endl; 
+std::cout << sumofsquares(10,12) << std::endl;
+return 0;
 
 
 } 
