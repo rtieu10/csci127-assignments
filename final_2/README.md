@@ -1,0 +1,1 @@
+The first function I have in scrabble.py, the second one works for some strings, but for others it doesnt work, I realized I had a return error in the function and I fixed it after the exam in the scrabble2.py file.
