@@ -19,7 +19,7 @@ def rle1(line):
 
 def rle2(line):
     encoded = []
-    cunt = 1
+    count = 1
     prevchar = line[0]
     for c in line[1:]:                  #setting one variable after another -> piggybacking
         if c == prevchar:               #if the current character is the same as the one before it then it will + 1
